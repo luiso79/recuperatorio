@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="estilos.css" />
+
+</head>
+
+<body class="iframe_content">
+    <h3>Ingrese sus datos y me comunicaré a la brevedad</h3><br><br>
+
+    <form id="formulario">
+        <input type="text" placeholder="Nombre" id="nombre" name="nombre"><br><br>
+        <input type="text" placeholder="Apellido" id="apellido" name="apellido"><br><br>
+        <input type="email" placeholder="Dirección de mail" id="email" name="email"><br><br>
+        <textarea id="motivo" name="motivo" rows="4" cols="50" placeholder="Motivo del contacto"></textarea><br><br>
+        <input type="submit" id="enviar" value="Enviar">
+    </form>
+
+    <!-- limpiaremos el formulario al realizar el submit -->
+    <script>
+        document.getElementById("enviar").onclick=function(){
+    document.getElementById("formulario").reset();
+    }
+    </script>
+</body>
+
+</html>

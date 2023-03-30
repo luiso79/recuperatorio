@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Interactivo</title>
+    <link rel="stylesheet" href="estilos.css" />
+    <script src="https://kit.fontawesome.com/af786b356f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!--Uso un contenedor para alojar el header y un div con la foto-->
+    <div class="contenedor_header">
+        <div id="div_foto">
+            <img src="foto.jpg" alt="foto" class="imgRedonda"/>
+        </div>
+        <header>
+            <h2>Luis Alberto Pereyra</h2><br>
+            <h3>Asistente de Sistemas</h3>
+        </header>
+    </div>  
+    
+    <!--Y otro contenedor con botones laterales y en el cuerpo principal un iframe donde
+    se ve el html correspondiente según la opción que se elija en la botonera-->
+        <div class="contenedor_body">
+            <aside><br>
+                <button type="button" id="boton_datos">Datos Personales</button><br><br>
+                <button type="button" id="boton_estudios">Estudios</button><br><br>
+                <button type="button" id="boton_experiencia">Experiencia Laboral</button><br><br>
+                <button type="button" id="boton_habilidades">Habilidades</button><br><br>
+                <button type="button" id="boton_contacto">Contacto</button>
+                <script src="script.js"></script>
+            </aside>
+            <section>
+                <iframe id="dinamico" src="datos.html"></iframe>
+            </section>
+        </div>
+
+        <footer>
+            <i class="fa-brands fa-github"></i>
+            <a target="_blank" href="https://github.com/luiso79/luiso79.github.io">github.com/luiso79/luiso79.github.io</a>
+        </footer>
+
+</body>
+</html>
